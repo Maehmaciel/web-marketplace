@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Document</title>
+	<style>
+		.produtos {
+			display: flex;
+			padding: 50px;
+			max-width: 90vw;
+		}
+
+		.produtos>div {
+			display: flex;
+			max-width: 90vw;
+			flex-wrap: wrap;
+		}
+
+		.produtos .imgProduto {
+			height: 320px;
+			width: 280px;
+			border: solid 5px #A5C135;
+		}
+
+		.produto {
+			margin: 20px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.produto p {
+			font-size: 24px;
+			line-height: 130%;
+			color: #545454;
+			margin: 16px 0px;
+		}
+
+		.produto span {
+			font-weight: 600;
+			font-size: 28px;
+			line-height: 135%;
+			color: #090C00;
+		}
+
+
+		@media (max-width: 950px) {}
+
+		@media (max-width: 350px) {}
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<h1>Market</h1>
+		<div>
+			<div class="logado">
+				<span class="user">Maria</span>
+
+
+			</div>
+			<div class="visita">
+				<a class="button">Login</a>
+				<a>Cadastro</a>
+			</div>
+			<a class="icon" href="carrinho.html">
+				<img src="assets/ic_cart.svg">
+			</a>
+		</div>
+
+	</header>
+	<section class="produtos">
+		<div>
+			<div class="produto">
+				<div class="imgProduto">
+					<img src="./assets/maca.jpg">
+				</div>
+
+				<p>Maça vermelha</p>
+				<span>Valor: R$ 1</span>
+				<button>Comprar</button>
+			</div>
+			<div class="produto">
+				<div class="imgProduto">
+					<img src="./assets/azeitona.jpg">
+				</div>
+
+				<p>Azeitona</p>
+				<span>Valor: R$ 3</span>
+				<button>Comprar</button>
+			</div>
+			<div class="produto">
+				<div class="imgProduto">
+					<img src="./assets/chocolate.jpg">
+				</div>
+
+				<p>Chocolate Lacta</p>
+				<span>Valor: R$ 4</span>
+				<button class="button">Comprar</button>
+			</div>
+		</div>
+
+	</section>
+</body>
+
+</html>

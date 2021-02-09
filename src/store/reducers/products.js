@@ -1,0 +1,17 @@
+const INITIAL_STATE = {
+	products: [],
+	categories: []
+};
+
+// Reducer
+export default function login(state = INITIAL_STATE, action) {
+    switch (action.type) {
+        case 'REFRESH_PRODUCT_LIST':
+            return { ...state, products: [...action.payload.list] };
+		
+		case 'REFRESH_CATEGORIES_LIST':
+			return { ...state, categories: ['Inicio', ...action.payload.list]};
+        default:
+            return state;
+    }
+}

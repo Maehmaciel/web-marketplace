@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+	border: none;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background: #F1F1F1;
+	font-family: 'Roboto', sans-serif;
+}
+
+#root {
+	height: 100%;
+}
+
+.regular {
+	font-weight: 400 !important;
+}
+
+.aaaa {
+	opacity: 0.2
+}
+
+.or {
+	color: #77797B;
+	font-weight: 400;
+	font-size: 18px;
+	margin: 0px 17px;
+}
+
+.bg-enter {
+	left: 0;
+}
+
+.bg-enter-active {
+	left: 1;
+	transition: left 300ms;
+}
+
+.bg-exit {
+	left: 1;
+}
+
+.bg-exit-active {
+	opacity: 0;
+	transition: left 300ms;
+}
+
+.my-node-enter {
+	left: -30%;
+}
+
+.my-node-enter-active {
+	left: 0;
+	transition: left 300ms;
+}
+
+.my-node-exit {
+	left: 0;
+}
+
+.my-node-exit-active {
+	left: -30%;
+	transition: left 300ms;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	margin-top: 10px;
+	padding: 0px 10px 20px 0px;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+	background: rgba(4, 102, 185, 0.6);
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(4, 102, 185, 1)
+}
+
+.marginBottomSpan {
+	margin-bottom: 2px !important;
+}
+
+.marginTopSpan {
+	margin-top: 0px !important;
+}
+
+.selected {
+	background: #FFFFFF;
+	border: 2px solid #0995C6;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 150%;
+	color: #0995C6;
+}
+
+
+.addresses {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.address-input {
+	flex-grow: 1 !important;
+	margin-right: 20px;
+}
+
+.max-width {
+	width: 90%;
+}
+
+.prices {
+	width: 50% !important;
+}
+
+@media (max-width: 808px) {
+	.prices {
+		width: calc(100% - 40px) !important;
+	}
+}
+
+h2 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 135%;
+}
+
+h3 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 130%;
+}
+
+p {
+	font-family: 'Inter';
+	margin: 0;
+}
+
+span {
+	font-family: 'Inter';
+}
+
+a {
+	font-family: 'Inter';
+	text-decoration: none;
+}
+
+/* Style The Dropdown Button */
+
+.dropbtn {
+	/* background: #0995C6; */
+	border-radius: 5px 5px 0px 0px;
+	color: white;
+	padding: 16px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 150%;
+	border: none;
+	cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a, .dropdown-content span {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 200%;
+	text-decoration: none;
+	color: #545454;
+	padding: 10px 16px;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+/* .dropdown-content a:hover {
+	border: solid 1px #0995C6;
+	color: #0995C6;
+} */
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	top:38px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+	opacity: 0.8;
+}
+
+
+
+  .loader {
+
+	border: 10px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 10px solid #3498db;
+	width: 100px;
+	height: 100px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+  

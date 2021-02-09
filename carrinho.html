@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<metbutton charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link hrbuttonf="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/main.css">
+		<title>Document</title>
+		<style>
+			.carrinho {
+				padding: 50px;
+				max-width: 90vw;
+				margin: 0 auto;
+				min-height: calc(100vh - 88px);
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+			}
+
+			.carrinho .itemCarrinho {
+				display: flex;
+				font-size: 18px;
+				line-height: 150%;
+				color: #545454;
+				justify-content: space-around;
+				align-items: center;
+			}
+
+			.carrinho .imgProduto {
+				height: 60px;
+				width: 60px;
+				border: solid 2px #A5C135;
+			}
+
+			#qtd {
+				width: 50px;
+				height: 40px;
+				border: 2px solid #DFDFDF;
+				padding: 5px;
+			}
+
+			.total {
+				margin: 20px 0px;
+			}
+
+			.total h2 {
+				font-weight: 600;
+				font-size: 22px;
+				line-height: 130%;
+				color: #090C00;
+			}
+
+			.total p {
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 17px;
+				color: #545454;
+			}
+
+			.total span {
+				font-weight: 600;
+				font-size: 40px;
+				line-height: 150%;
+				color: #090C00;
+			}
+
+			.total .button {
+				padding: 15px 50px;
+			}
+		</style>
+
+</head>
+
+<body>
+	<header>
+		<h1>Market</h1>
+		<div>
+			<div class="logado">
+				<span class="user">Maria</span>
+
+
+			</div>
+			<div class="visita">
+				<a class="button">Login</a>
+				<a>Cadastro</a>
+			</div>
+			<a class="icon" href="carrinho.html">
+				<img src="assets/ic_cart.svg">
+			</a>
+		</div>
+
+	</header>
+	<section class="carrinho">
+		<section class="itens">
+			<div class="itemCarrinho">
+				<div class="imgProduto">
+					<img src="./assets/maca.jpg">
+				</div>
+
+				<p>Maça vermelha</p>
+				<span>Valor: R$ 1</span>
+				<label for="qtd">
+					<input id="qtd" min="1" value="1" type="number" />
+				</label>
+				<button class="icon" href="carrinho.html">
+					<img src="assets/ic_close.svg">
+				</button>
+			</div>
+			<div class="itemCarrinho">
+				<div class="imgProduto">
+					<img src="./assets/maca.jpg">
+				</div>
+
+				<p>Maça vermelha</p>
+				<span>Valor: R$ 1</span>
+				<label for="qtd">
+					<input id="qtd" min="1" value="1" type="number" />
+				</label>
+
+				<button class="icon" href="carrinho.html">
+					<img src="assets/ic_close.svg">
+				</button>
+			</div>
+
+			<div class="itemCarrinho">
+				<div class="imgProduto">
+					<img src="./assets/maca.jpg">
+				</div>
+
+				<p>Maça vermelha</p>
+				<span>Valor: R$ 1</span>
+				<label for="qtd">
+					<input id="qtd" min="1" value="1" type="number" />
+				</label>
+				<button class="icon" href="carrinho.html">
+					<img src="assets/ic_close.svg">
+				</button>
+			</div>
+			<div class="itemCarrinho">
+				<div class="imgProduto">
+					<img src="./assets/maca.jpg">
+				</div>
+
+				<p>Maça vermelha</p>
+				<span>Valor: R$ 1</span>
+				<label for="qtd">
+					<input id="qtd" min="1" value="1" type="number" />
+				</label>
+				<button class="icon" href="carrinho.html">
+					<img src="assets/ic_close.svg">
+				</button>
+			</div>
+
+		</section>
+
+		<section class="total">
+			<div>
+				<h2>Valor da Compra</h2>
+				<p>Taxas se aplicam de acordo com o método de pagamento.</p>
+				<span>R$ 00,000</span>
+			</div>
+			<button class="button">Comprar</button>
+		</section>
+	</section>
+
+</body>
+
+</html>
